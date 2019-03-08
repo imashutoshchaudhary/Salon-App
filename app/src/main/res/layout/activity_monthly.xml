@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Monthly">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:subtitleTextColor="@color/lightgray"
+                android:minHeight="?attr/actionBarSize"
+                android:background="@drawable/background2"
+                app:titleTextColor="@color/lightgray"
+                android:id="@+id/toolbaas"></android.support.v7.widget.Toolbar>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Brilltecho Pvt Ltd"
+                    android:textSize="33dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="14dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Narayan Vihar,Jaipur"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="3dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4512784512"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:layout_marginTop="4dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@android:color/black"
+                    android:weightSum="6">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="DATE"
+                        android:textSize="19dp"
+                        android:paddingLeft="12dp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="INCOME"
+                        android:textSize="19dp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="EXPENSIVE"
+                        android:textSize="19dp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/reecc"></android.support.v7.widget.RecyclerView>
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/reeecc"></android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="125dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="2">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22dp"
+                        android:textColor="@android:color/black"
+                        android:text="Total"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/black"
+                        android:text="If +ve its mean profit"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/black"
+                        android:text="If -ve its mean loss"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="22dp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/to"
+                    android:text="0"/>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>

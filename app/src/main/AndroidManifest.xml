@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sampat.brillsalon">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/saa"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/t8"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login" />
+        <activity android:name=".Client" />
+        <activity android:name=".Staff" />
+        <activity android:name=".Service" />
+        <activity android:name=".Stock" />
+        <activity android:name=".Printbill" />
+        <activity android:name=".Showbill" />
+        <activity android:name=".Balancesheet" />
+        <activity android:name=".Daily" />
+        <activity android:name=".Monthly" />
+        <activity android:name=".Weekly" />
+        <activity android:name=".Message" />
+        <activity android:name=".Reminder" />
+        <activity android:name=".Soldproduct" />
+        <activity android:name=".Offers" />
+        <activity android:name=".Sharephoto" />
+        <activity android:name=".Editclient" />
+        <activity
+            android:name=".Home"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_home"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".Bill" />
+        <activity android:name=".Editstaff" />
+        <activity android:name=".Editstock" />
+        <activity android:name=".Editservice" />
+        <activity android:name=".Editproduct" />
+        <activity android:name=".Editoffer" />
+        <activity android:name=".alarm" />
+        <activity android:name=".Nointernet" />
+        <activity android:name=".Sendmessage" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Editprofile" />
+        <activity android:name=".Forgot" />
+        <activity android:name=".Changepassowrd" />
+        <activity android:name=".Income" />
+        <activity android:name=".Expendature" />
+        <meta-data
+            android:name="instamojo.orderauth.url"
+            android:value="http://www.brilltechno.com/bdating/android/access_token.php" />
+        <activity android:name=".Weeklyinex" />
+        <activity android:name=".Membership"
+            android:parentActivityName=".Home"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forgot"
+    android:background="@color/lightgray"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/background1"
+        app:elevation="0dp"
+        android:gravity="center"
+        android:id="@+id/appbarid">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/icon"
+            android:layout_gravity="center"/>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="14dp"
+        android:layout_marginTop="9dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please enter your registered Email/Username"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"/>
+
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="14dp"
+        android:layout_marginTop="21dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+             android:id="@+id/email"
+              android:textAlignment="center"
+             android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonstyle"
+        android:text="Change"
+        android:layout_marginTop="22dp"
+        android:id="@+id/change"
+        android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+        </LinearLayout>

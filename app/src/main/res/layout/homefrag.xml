@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/round"
+        android:hint="Client Name"
+        android:inputType="text"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:backgroundTint="@android:color/black"
+        android:padding="12dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/round"
+        android:hint="Client Email"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:backgroundTint="@android:color/black"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/round"
+        android:hint="Client Number"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:backgroundTint="@android:color/black"
+        android:inputType="phone"
+        android:padding="12dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date Of Birth"
+        android:textSize="12sp"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@android:color/black"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Birthday"
+        android:clickable="true"
+        android:background="@drawable/round"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:padding="12dp"
+        android:editable="false"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@android:color/black"
+        android:hint="mm/dd/yyyy"/>
+
+
+    <Spinner
+        android:id="@+id/spn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="19dp"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:backgroundTint="@android:color/black"
+        android:background="@drawable/round"
+        android:padding="12dp">
+
+    </Spinner>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/btn_round"
+
+        android:textAlignment="center"
+
+        android:text="add" />
+
+</LinearLayout>

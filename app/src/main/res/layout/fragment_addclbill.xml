@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView   xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Addclbill">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/round"
+                android:hint="Client Name"
+                android:inputType="text"
+
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+
+                android:padding="12dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/round"
+                android:hint="Client Email"
+
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+
+                android:inputType="textEmailAddress"
+                android:padding="12dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/round"
+                android:hint="Client Number"
+
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+
+                android:inputType="phone"
+                android:padding="12dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth"
+                android:textSize="12sp"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@android:color/black"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Birthday"
+                android:clickable="true"
+                android:background="@drawable/round"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:padding="12dp"
+                android:editable="false"
+
+                android:textColor="@android:color/black"
+
+                android:hint="mm/dd/yyyy"/>
+
+
+            <Spinner
+                android:id="@+id/spn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="14dp"
+
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+
+                android:background="@drawable/round"
+                android:padding="12dp">
+
+            </Spinner>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/btn_round"
+                android:id="@+id/adda"
+                android:textAlignment="center"
+
+                android:text="add" />
+
+
+        </LinearLayout>
+    </ScrollView>

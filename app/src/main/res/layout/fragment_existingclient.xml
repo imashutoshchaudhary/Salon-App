@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/lightgray"
+    tools:context=".Existingclient">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="14dp"
+        android:layout_marginTop="9dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/round"
+                android:hint="Client Number"
+               android:id="@+id/clnumber"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+
+                android:inputType="phone"
+                android:padding="12dp" />
+</android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/round"
+                android:hint="Client Name"
+                android:inputType="text"
+                android:textSize="22dp"
+                 android:id="@+id/clname"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+
+                android:padding="12dp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Birthday"
+                android:clickable="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/round"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:padding="12dp"
+                android:textSize="22dp"
+                android:editable="false"
+                android:textColor="@android:color/black"
+
+                android:hint="Client Email"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/buttonstyle"
+                android:textColor="@android:color/white"
+                android:id="@+id/add"
+                android:textAlignment="center"
+
+                android:text="Show client data" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="14dp"
+        android:layout_marginTop="9dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Service"
+                android:textSize="12sp"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@android:color/black"/>
+
+
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="23dp">
+              <Spinner
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="center"
+                  android:id="@+id/spi"></Spinner>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/getservice"
+                  android:background="@drawable/round"
+                  android:textAlignment="center"
+                  android:text=""
+                  android:layout_marginTop="16dp"
+                  android:textColor="@android:color/black"
+                  android:textSize="22dp"/>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/getprice"
+                  android:background="@drawable/round"
+                  android:textAlignment="center"
+                  android:text=""
+                  android:layout_marginTop="16dp"
+                  android:textColor="@android:color/black"
+                  android:textSize="22dp"/>
+          </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/buttonstyle"
+                android:id="@+id/addbill"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+
+                android:text="add" />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="14dp"
+        android:layout_marginTop="9dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:id="@+id/rebill"
+                android:layout_marginTop="22dp"></android.support.v7.widget.RecyclerView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:padding="15dp"
+    android:layout_marginTop="20dp">
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Total"
+    android:textSize="18dp"
+    android:textColor="@android:color/black"
+    android:textAlignment="center"
+    android:layout_weight="1"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FF0824C4"
+        android:textSize="18dp"
+        android:id="@+id/total"
+        android:textAlignment="center"
+        android:layout_weight="1"/>
+</LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/buttonstyle"
+                android:id="@+id/adds"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+
+                android:text="save" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show bill"
+                android:id="@+id/bill"
+                android:textSize="22dp"
+                android:textAlignment="center"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@android:color/holo_red_dark"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+

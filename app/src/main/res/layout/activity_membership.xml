@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Membership">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:background="@drawable/mamberbasic_bbtn_actn"
+            android:textColor="#ffffff"
+
+            />
+        <Button
+            android:id="@+id/btnStandard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Standard"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:background="@drawable/mamberstandard_bbtn_actn"
+            android:textColor="#ffffff"
+            />
+        <Button
+            android:id="@+id/btnPletinum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Platinum"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:background="@drawable/mamberpletinum_bbtn_actn"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fragmentPlans"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    android:background="@color/lightgray"
+    tools:context=".Weekly">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+         >
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:subtitleTextColor="@color/lightgray"
+                android:minHeight="?attr/actionBarSize"
+                android:background="@drawable/background2"
+                app:titleTextColor="@color/lightgray"
+                android:id="@+id/toolbas"></android.support.v7.widget.Toolbar>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brilltecho Pvt Ltd"
+                android:textSize="33dp"
+                android:textAlignment="center"
+                android:layout_marginTop="14dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Narayan Vihar,Jaipur"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_marginTop="3dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4512784512"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:layout_marginTop="4dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="6"
+                    android:background="@android:color/black">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="DATE"
+                        android:textSize="19dp"
+                        android:paddingLeft="12dp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="INCOME"
+                        android:textSize="19dp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="EXPENSIVE"
+                        android:textSize="19dp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    >
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:id="@+id/reec"></android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/reeec"></android.support.v7.widget.RecyclerView>
+</LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

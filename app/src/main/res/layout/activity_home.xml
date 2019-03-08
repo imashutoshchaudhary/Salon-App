@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fcfcfc">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="270dp"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsintoolbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorPrimary"
+            app:title="Brill Salon"
+            app:expandedTitleMarginStart="40dp"
+            app:expandedTitleMarginEnd="60dp"
+            android:background="@drawable/b">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/hometool"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/black_overlay">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:clipToPadding="false"
+                    android:padding="6dp">
+
+                    <android.support.v7.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:id="@+id/client"
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        app:cardCornerRadius="19dp"
+                        android:background="@color/white"
+                        android:layout_margin="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:src="@drawable/client"
+                                android:background="@drawable/shape"
+                                android:padding="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:text="Client"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="#FF0824C4"
+                                android:layout_margin="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+
+                                android:text="Add and Manage your clients"
+                                android:padding="5dp"
+                                android:textColor="@android:color/darker_gray"/>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:background="@color/yello"
+                        android:layout_height="190dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="19dp"
+                        android:id="@+id/staff">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:src="@drawable/staff"
+                                android:background="@drawable/shape"
+                                android:padding="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:text="Staff"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="#FF0824C4"
+                                android:layout_margin="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Check your staff activities"
+                                android:padding="5dp"
+                                android:textColor="@android:color/darker_gray"/>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:padding="6dp">
+                    <android.support.v7.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        app:cardCornerRadius="19dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/service">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:background="@drawable/shape"
+                                android:src="@drawable/services"
+                                android:padding="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:text="Services"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="#FF0824C4"
+                                android:layout_margin="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Manage your services"
+                                android:padding="5dp"
+                                android:textColor="@android:color/darker_gray"/>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        app:cardCornerRadius="19dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/stock">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:background="@drawable/shape"
+                                android:padding="10dp"
+                                android:src="@drawable/stock" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Stock"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="10dp"
+                                android:background="#FF0824C4" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Manage your stock"
+                                android:textColor="@android:color/darker_gray" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="6dp"
+                    android:weightSum="1">
+
+                    <android.support.v7.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="19dp"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/balance">
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:background="@drawable/shape"
+                                android:src="@drawable/balance"
+                                android:padding="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:text="Balance Sheet"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="#FF0824C4"
+                                android:layout_margin="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Check your balance sheet"
+                                android:padding="5dp"
+                                android:textColor="@android:color/darker_gray"/>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:padding="6dp">
+                    <android.support.v7.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        app:cardCornerRadius="19dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/reminders">
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:background="@drawable/shape"
+                                android:src="@drawable/rem"
+                                android:padding="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:text="Reminder"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="#FF0824C4"
+                                android:layout_margin="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Set your Reminder and get Booking Reminder"
+                                android:padding="5dp"
+                                android:textColor="@android:color/darker_gray"/>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:id="@+id/template"
+                        app:cardCornerRadius="19dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_margin="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:background="@drawable/shape"
+                                android:src="@drawable/bill"
+                                android:padding="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:text="Print Bill"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="#FF0824C4"
+                                android:layout_margin="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Check and send printed bill"
+                                android:padding="5dp"
+                                android:textColor="@android:color/darker_gray"/>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="6dp"
+                    android:weightSum="2">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="19dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:id="@+id/sold"
+                        android:foreground="?android:attr/selectableItemBackground">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:background="@drawable/shape"
+                                android:padding="10dp"
+                                android:src="@drawable/sale" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Product Sale"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="10dp"
+                                android:background="#FF0824C4" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Check and manage product sale"
+                                android:textColor="@android:color/darker_gray" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        app:cardCornerRadius="19dp"
+                        android:id="@+id/upload"
+                        android:foreground="?android:attr/selectableItemBackground">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:background="@drawable/shape"
+                                android:padding="10dp"
+                                android:src="@drawable/upload" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Upload"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="10dp"
+                                android:background="#FF0824C4" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Check and upload Shop's photo"
+                                android:textColor="@android:color/darker_gray" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:padding="6dp">
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        app:cardCornerRadius="19dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:id="@+id/addoffers"
+                        android:foreground="?android:attr/selectableItemBackground">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:background="@drawable/shape"
+                                android:padding="10dp"
+                                android:src="@drawable/offer" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Add Offers"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="10dp"
+                                android:background="#FF0824C4" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Check and add new Offers"
+                                android:textColor="@android:color/darker_gray" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:id="@+id/bill"
+                        app:cardCornerRadius="19dp"
+                        android:foreground="?android:attr/selectableItemBackground">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:background="@drawable/shape"
+                                android:padding="10dp"
+                                android:src="@drawable/email1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Template"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="10dp"
+                                android:background="#FF0824C4" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Check and create new Templates"
+                                android:textColor="@android:color/darker_gray" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="280dp"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="236dp"
+        android:src="@drawable/call"
+        android:id="@+id/fab_wa"
+        android:background="@android:color/holo_green_dark"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"/>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="280dp"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="156dp"
+        android:src="@drawable/unnamed"
+        android:id="@+id/fab_email"
+        android:background="@color/green"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="280dp"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="86dp"
+        android:src="@drawable/images"
+        android:id="@+id/fab_call"
+        android:background="@color/white"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="280dp"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ccare"
+        android:id="@+id/fab_cs"
+        app:layout_behavior="com.valdio.valdioveliu.floatingactionbuttonproject.Scrolling_Floating_Action_Button.FAB_Hide_on_Scroll"
+        app:pressedTranslationZ="12dp"/>
+</FrameLayout>

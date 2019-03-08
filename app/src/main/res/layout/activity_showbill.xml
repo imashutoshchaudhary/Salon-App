@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Showbill">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="24dp"
+android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Brilltecho Pvt Ltd"
+        android:textSize="33dp"
+        android:textAlignment="center"
+        android:layout_marginTop="19dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Narayan Vihar,Jaipur"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginTop="3dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4512784512"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginTop="4dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@android:color/black"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="20dp"
+        android:id="@+id/name"
+        android:layout_marginTop="27dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:id="@+id/email"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number"
+        android:id="@+id/numb"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recb"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@android:color/black"
+        android:layout_marginTop="42dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:layout_weight="1"
+            android:textSize="23dp"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:text="Total"
+            android:id="@+id/total"
+            android:textSize="20dp"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Print Bill"
+        android:textSize="17dp"
+        android:id="@+id/print"
+        android:layout_marginLeft="140dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:drawableLeft="@drawable/printer"
+
+        android:layout_marginTop="28dp"/>
+
+</LinearLayout>
+</ScrollView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/image"
+        android:padding="44dp"/>
+</RelativeLayout>

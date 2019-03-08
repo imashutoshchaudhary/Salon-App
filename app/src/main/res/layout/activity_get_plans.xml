@@ -1,0 +1,320 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LookingforFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="15dp"
+            android:orientation="vertical">
+             <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtName"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_bbtn_actn_textview"
+            android:layout_width="match_parent"
+            android:layout_margin="7dp"
+            android:text="name"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"  />
+
+
+        <TextView
+            android:id="@+id/txtemail"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_bbtn_actn_textview"
+            android:layout_width="match_parent"
+            android:layout_margin="7dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"  />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/txtdob"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:background="@drawable/rounded_bbtn_actn_textview"
+        android:layout_width="match_parent"
+        android:layout_margin="7dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"  />
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/txtphone"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:background="@drawable/rounded_bbtn_actn_textview"
+        android:layout_width="match_parent"
+        android:layout_margin="7dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"  />
+</LinearLayout>
+
+        <TextView
+            android:id="@+id/txtCountry"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_bbtn_actn_textview"
+            android:layout_width="match_parent"
+            android:layout_margin="7dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"  />
+
+        <TextView
+            android:id="@+id/txtState"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_bbtn_actn_textview"
+            android:layout_width="match_parent"
+            android:layout_margin="7dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"  />
+
+        <TextView
+            android:id="@+id/txtCity"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_bbtn_actn_textview"
+            android:layout_width="match_parent"
+            android:layout_margin="7dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"  />
+
+    </LinearLayout>
+
+             <LinearLayout
+                 android:layout_marginRight="20dp"
+                 android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                 android:orientation="vertical"
+            android:background="@drawable/rounded_backgroundplan">
+                 <TextView
+                     android:id="@+id/txtPlanName"
+                     android:textSize="25dp"
+                     android:padding="10dp"
+                     android:textStyle="bold"
+                     android:textColor="#ffffff"
+                     android:layout_width="match_parent"
+
+                     android:gravity="center_horizontal"
+                     android:layout_height="wrap_content"  />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:weightSum="2"
+                     android:orientation="horizontal">
+                     <TextView
+                        android:layout_weight="1"
+                         android:textSize="18dp"
+                         android:padding="6dp"
+                         android:textStyle="bold"
+                         android:textColor="#ffffff"
+                         android:layout_width="match_parent"
+
+                         android:text="Duration"
+                         android:gravity="center_horizontal"
+                         android:layout_height="wrap_content"  />
+
+                     <TextView
+                         android:layout_weight="1"
+                         android:textSize="18dp"
+                         android:padding="6dp"
+                         android:textStyle="bold"
+                         android:textColor="#ffffff"
+                         android:layout_width="match_parent"
+
+                         android:text="Total"
+                         android:gravity="center_horizontal"
+                         android:layout_height="wrap_content"  />
+
+                 </LinearLayout>
+                <View
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:weightSum="2"
+                     android:orientation="horizontal">
+                     <TextView
+                         android:id="@+id/txtDuration"
+                         android:layout_weight="1"
+                         android:textSize="16dp"
+                         android:padding="6dp"
+                         android:textStyle="italic"
+                         android:textColor="#ffffff"
+                         android:layout_width="match_parent"
+
+                         android:text="Duration"
+                         android:gravity="center_horizontal"
+                         android:layout_height="wrap_content"  />
+
+                     <TextView
+                         android:id="@+id/txtprice"
+                         android:layout_weight="1"
+                         android:textSize="16dp"
+                         android:padding="6dp"
+                         android:textStyle="italic"
+                         android:textColor="#ffffff"
+                         android:layout_width="match_parent"
+
+                         android:text="Total"
+                         android:gravity="center_horizontal"
+                         android:layout_height="wrap_content"  />
+
+                 </LinearLayout>
+                 <View
+                     android:background="#ffffff"
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dp"/>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:weightSum="2"
+                     android:orientation="horizontal">
+                     <TextView
+
+                         android:layout_weight="1"
+                         android:textSize="16dp"
+                         android:padding="6dp"
+                         android:textStyle="italic"
+                         android:textColor="#ffffff"
+                         android:layout_width="match_parent"
+
+                         android:text="Subtotal"
+                         android:gravity="center_horizontal"
+                         android:layout_height="wrap_content"  />
+
+                     <TextView
+                         android:id="@+id/txtsubprice"
+                         android:layout_weight="1"
+                         android:textSize="16dp"
+                         android:padding="6dp"
+                         android:textStyle="italic"
+                         android:textColor="#ffffff"
+                         android:layout_width="match_parent"
+
+                         android:text="Total"
+                         android:gravity="center_horizontal"
+                         android:layout_height="wrap_content"  />
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:weightSum="2"
+                     android:orientation="horizontal">
+                     <TextView
+                         android:layout_weight="1"
+                         android:textSize="16dp"
+                         android:padding="6dp"
+                         android:textStyle="italic"
+                         android:textColor="#ffffff"
+                         android:layout_width="match_parent"
+
+                         android:text="Discount"
+                         android:gravity="center_horizontal"
+                         android:layout_height="wrap_content"  />
+
+                     <TextView
+                         android:id="@+id/txtDiscountprice"
+                         android:layout_weight="1"
+                         android:textSize="16dp"
+                         android:padding="6dp"
+                         android:textStyle="italic"
+                         android:textColor="#ffffff"
+                         android:layout_width="match_parent"
+
+                         android:text="Totaldiscount"
+                         android:gravity="center_horizontal"
+                         android:layout_height="wrap_content"  />
+
+                 </LinearLayout>
+                 <View
+                     android:background="#ffffff"
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dp"/>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:weightSum="2"
+                     android:orientation="horizontal">
+                     <TextView
+                         android:layout_weight="1"
+                         android:textSize="20dp"
+                         android:padding="6dp"
+                         android:textStyle="bold"
+                         android:textColor="#ffffff"
+                         android:layout_width="match_parent"
+
+                         android:text="Total"
+                         android:gravity="center_horizontal"
+                         android:layout_height="wrap_content"  />
+
+                     <TextView
+                         android:id="@+id/txttotalprice"
+                         android:layout_weight="1"
+                         android:textSize="20dp"
+                         android:padding="6dp"
+                         android:textStyle="bold"
+                         android:textColor="#ffffff"
+                         android:layout_width="match_parent"
+
+                         android:text="Total"
+                         android:gravity="center_horizontal"
+                         android:layout_height="wrap_content"  />
+
+                 </LinearLayout>
+                 <Button
+                     android:id="@+id/btnPaymentGatway"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Pay Now"
+                     android:layout_gravity="center_horizontal"
+                     android:layout_marginBottom="10dp"
+                     android:textAllCaps="false"
+                     android:background="@drawable/rounded_bbtn_actn"
+                     android:textColor="#ffffff"
+                     />
+
+
+             </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

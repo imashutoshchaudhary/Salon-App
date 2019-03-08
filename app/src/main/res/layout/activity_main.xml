@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+   <LinearLayout
+       android:id="@+id/l1"
+       android:layout_width="match_parent"
+       android:layout_height="400dp"
+       android:orientation="vertical">
+      <ImageView
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="150dp"
+          android:src="@drawable/icon"/>
+      <TextView
+          android:textColor="@color/yello"
+          android:layout_width="398dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="Brill Salon"
+          android:textAlignment="center"
+          android:textSize="30sp"
+          android:layout_marginTop="50dp"/>
+   </LinearLayout>
+   <LinearLayout
+       android:id="@+id/l2"
+       android:layout_marginTop="40dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+      <Button
+          android:id="@+id/buttonsub"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:background="@drawable/buttonstyle"
+          android:text="GET STARTED" />
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/salon1"
+          android:paddingLeft="15dp"
+          android:paddingRight="15dp"
+          android:paddingTop="15dp"
+          android:paddingBottom="15dp"/>
+   </LinearLayout>
+
+
+</LinearLayout>
